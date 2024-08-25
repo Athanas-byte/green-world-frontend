@@ -13,12 +13,16 @@ import { HeaderComponent } from './layout/header/header.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { AuthlayoutComponent } from './layout/app_layout/authlayout/authlayout.component';
+import { MainlayoutComponent } from './layout/app_layout/mainlayout/mainlayout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    AuthlayoutComponent,
+    MainlayoutComponent
    
 
   ],
