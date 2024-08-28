@@ -1,5 +1,6 @@
 <mat-sidenav-container class="example-container">
-  <mat-sidenav mode="side" [opened]="isSidenavOpened" style="width: 250px; background-color: #F0F0F0">
+  <mat-sidenav mode="side" [opened]="isSidenavOpened" 
+  class="fixed-sidenav">
     <div class="sidenav-items">
       <ng-container *ngFor="let route of sidebarRoutes">
         <!-- Always use mat-expansion-panel, regardless of submenu -->
@@ -23,7 +24,10 @@
   </mat-sidenav>
   
 
-  <mat-sidenav-content>
+  <mat-sidenav-content class="scrollable-content">
+
+    <div class="content-wrapper">
     <router-outlet></router-outlet>
+  </div>
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -15,6 +15,8 @@ import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { AuthlayoutComponent } from './layout/app_layout/authlayout/authlayout.component';
 import { MainlayoutComponent } from './layout/app_layout/mainlayout/mainlayout.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { MainlayoutComponent } from './layout/app_layout/mainlayout/mainlayout.c
     MatToolbarModule,
     MatListModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgApexchartsModule,
+    FormsModule
     
   ],
   providers: [],

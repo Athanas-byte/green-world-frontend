@@ -1,12 +1,73 @@
-.analytics-card{
-    background-color: #e5e4e2;
-    width: 250px;
-    height: 250px;
+.headers {
+    background-color: #92f59a;
+    margin-top: 20px;
+    height: 40px;
+}
+
+.header-info {
     margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-layout {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.cash-flow-card {
+    flex: 2;
+    height: 450px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+.products-card {
+    flex: 1;
+    height: 450px;
+    margin-right: 10px;
+}
+
+.right-alerts-card {
+    flex: 0 0 200px;
+    height: 450px;
+}
+
+.notifications-card {
+    height: 100%;
+    width: 100%;
+}
+
+.pie-charts {
+    display: flex;
+    justify-content: space-between;
     margin-top: 10px;
 }
-.my-cards{
+
+.trade-counterparties, .sales-distribution, .third-pie-chart {
+    flex: 1;
+    height: 320px;
+    margin-right: 10px;
+}
+
+.card-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 10px;
+}
+
+.analytics-card, .other-chart1, .other-chart2 {
+    flex: 1;
+    height: 320px;
+    margin-right: 10px;
 }
