@@ -1,0 +1,20 @@
+<div>
+  <h2>Cashflow Analytical Graph</h2>
+  <div>
+    <label for="week">Week:</label>
+    <select id="week" [(ngModel)]="selectedWeek">
+      <option *ngFor="let week of weeks" [value]="week">{{ week }}</option>
+    </select>
+
+    <label for="product">Product:</label>
+    <select id="product" [(ngModel)]="selectedProduct">
+      <option *ngFor="let product of products" [value]="product">{{ product }}</option>
+    </select>
+  </div>
+  <apx-chart
+    [series]="chartSeries"
+    [chart]="chartOptions"
+    [xaxis]="xAxisOptions"
+    [colors]="chartColors">
+  </apx-chart>
+</div>

@@ -136,6 +136,19 @@ export interface RouteInfo {
           groupTitle: false
         },
 
+        {
+          path: "./accounts/income",
+          title: "Income",
+          moduleName: "accounts",
+          icon: "plus",
+          class: "",
+          badge: "",
+          badgeClass: "",
+          role: ["ADMIN"],
+          submenu: [],
+          groupTitle: false
+        },
+
       ]
     },
     {
@@ -149,6 +162,31 @@ export interface RouteInfo {
       badgeClass: "",
       role: ["ADMIN"],
       submenu: [
+        {
+          path: "./products/all-products",
+          title: "All products",
+          moduleName: "products",
+          icon: "plus",
+          class: "",
+          badge: "",
+          badgeClass: "",
+          role: ["ADMIN"],
+          submenu: [],
+          groupTitle: false
+        },
+
+        {
+          path: "./products/orders",
+          title: "Orders",
+          moduleName: "products",
+          icon: "plus",
+          class: "",
+          badge: "",
+          badgeClass: "",
+          role: ["ADMIN"],
+          submenu: [],
+          groupTitle: false
+        },
 
       ]
     },

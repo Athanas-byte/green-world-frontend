@@ -1,5 +1,5 @@
 img{
-    height: 60px;
+    height: 30px;
     width: 100px;
 }
 .brand-image {
@@ -11,11 +11,18 @@ img{
  
 }
 
-.app-toolbar{
+.fixed-toolbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure the toolbar spans the full width of the page */
+    height: 60px; /* Ensure the height matches your design */
     background-color: #F0F0F0;
     display: flex;
     align-items: center;
-}
+    z-index: 1000; /* Make sure the toolbar stays above other elements */
+  }
+  
 .brand-name{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;

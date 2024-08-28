@@ -13,12 +13,18 @@ import { HeaderComponent } from './layout/header/header.component';
 import { SidebarComponent } from './layout/sidebar/sidebar.component';
 import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { AuthlayoutComponent } from './layout/app_layout/authlayout/authlayout.component';
+import { MainlayoutComponent } from './layout/app_layout/mainlayout/mainlayout.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    AuthlayoutComponent,
+    MainlayoutComponent
    
 
   ],
@@ -32,7 +38,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatToolbarModule,
     MatListModule,
     MatCardModule,
-    MatExpansionModule
+    MatExpansionModule,
+    NgApexchartsModule,
+    FormsModule
     
   ],
   providers: [],

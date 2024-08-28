@@ -16,7 +16,7 @@ export class AuthGuard implements CanActivate {
     const isAdmin = true; // Replace this with your actual logic to check if the user is an admin
 
     if (isAdmin) {
-      return true; // Allow access
+      return true; 
     } else {
       // Redirect to some unauthorized page or handle as per your application logic
       return this.router.parseUrl('/unauthorized');
