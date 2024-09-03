@@ -1,0 +1,20 @@
+<!-- User Profile Card -->
+<div class="user-profile-card">
+    <!-- Profile Image -->
+    <div class="profile-image">
+      <div class="initials">{{ userData.firstName.charAt(0) }}{{ userData.lastName.charAt(0) }}</div>
+    </div>
+  
+    <!-- User Details -->
+    <div class="user-details">
+      <h3>Hello, {{ userData.firstName }}</h3>
+      <p>{{ userData.email }}</p>
+    </div>
+  
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+      <button mat-button class="settings-button">Settings</button>
+      <button mat-button class="logout-button">Logout</button>
+    </div>
+  </div>
+  

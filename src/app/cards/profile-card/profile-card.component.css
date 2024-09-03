@@ -1,0 +1,32 @@
+.profile-page {
+    text-align: center;
+  }
+  
+  .profile-info-card {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .staff-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+  
+  .photo-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .other-info {
+    text-align: left;
+  }
+  
+  .search-criteria input {
+    padding: 10px;
+    width: 300px;
+    margin: 20px 0;
+  }
+  

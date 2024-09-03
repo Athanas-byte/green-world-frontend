@@ -6,7 +6,7 @@ import { EmployeeProfilesComponent } from './employee-profiles/employee-profiles
 
 const routes: Routes = [
   {path: "available-employees", component: AvailableEmployeesComponent},
-  {path: "employee-remuneration", component: EmployeeRemunerationsComponent},
+  {path: "employee-remunerations", component: EmployeeRemunerationsComponent},
   {path: "employee-profiles", component: EmployeeProfilesComponent}
 ];
 

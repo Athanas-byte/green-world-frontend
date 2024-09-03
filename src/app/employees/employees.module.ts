@@ -5,7 +5,8 @@ import { EmployeesRoutingModule } from './employees-routing.module';
 import { AvailableEmployeesComponent } from './available-employees/available-employees.component';
 import { EmployeeRemunerationsComponent } from './employee-remunerations/employee-remunerations.component';
 import { EmployeeProfilesComponent } from './employee-profiles/employee-profiles.component';
-
+import { TablesModule } from '../tables/tables.module';
+import { CardsModule } from '../cards/cards.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,10 @@ import { EmployeeProfilesComponent } from './employee-profiles/employee-profiles
   ],
   imports: [
     CommonModule,
-    EmployeesRoutingModule
+    EmployeesRoutingModule,
+    TablesModule,
+    CardsModule
+
   ]
 })
 export class EmployeesModule { }
