@@ -1,0 +1,28 @@
+<div class="profile-page">
+    <div class="profile-info">
+      <h3>We value our users' privacy, and we cannot display all profiles unless necessary. To proceed, search the profile you want to view:</h3>
+    </div>
+  
+    <div class="search-criteria">
+        <input type="text" placeholder="Search by name" (input)="onSearch($event)" />
+
+    </div>
+  
+    <div class="profile-card" *ngIf="selectedProfile">
+      <mat-card class="profile-info-card">
+        <div class="staff-photo">
+          <img [src]="selectedUser.photo" alt="{{selectedUser.firstName}}'s photo" class="photo-circle">
+        </div>
+        <div class="other-info">
+          <p>Name: {{selectedUser.firstName}} {{selectedUser.lastName}}</p>
+          <p>Role: {{selectedUser.role}}</p>
+          <p>Email: {{selectedUser.email}}</p>
+          <p>Gross Pay: {{selectedUser.grossPay}}</p>
+          <p>Status: {{selectedUser.status}}</p>
+          <p>Career: {{selectedUser.career}}</p>
+          <p>Country: {{selectedUser.country}}</p>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+  

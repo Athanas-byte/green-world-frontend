@@ -4,6 +4,7 @@ import { HeaderComponent } from './layout/header/header.component';
 import { AuthGuard } from './guards/auth.guard';
 import { MainlayoutComponent } from './layout/app_layout/mainlayout/mainlayout.component';
 import { AuthlayoutComponent } from './layout/app_layout/authlayout/authlayout.component';
+import { CardsModule } from './cards/cards.module';
 
 const routes: Routes = [
   { 
@@ -40,6 +41,12 @@ const routes: Routes = [
     path: "graphs",
     loadChildren: () =>
       import("./graphs/graphs.module").then((m) => m.GraphsModule)
+  },
+
+  {
+    path:"cards",
+    loadChildren: () =>
+      import("./cards/cards.module"). then((m) => m.CardsModule)
   }
 ]
 },
