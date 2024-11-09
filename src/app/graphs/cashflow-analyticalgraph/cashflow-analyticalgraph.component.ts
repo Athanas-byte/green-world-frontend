@@ -4,7 +4,7 @@ import { ApexAxisChartSeries, ApexChart, ApexXAxis } from 'ng-apexcharts';
 @Component({
   selector: 'app-cashflow-analyticalgraph',
   templateUrl: './cashflow-analyticalgraph.component.html',
-  styleUrls: ['./cashflow-analyticalgraph.component.css']
+  styleUrls: ['./cashflow-analyticalgraph.component.scss']
 })
 export class CashflowAnalyticalgraphComponent implements OnInit {
 

@@ -6,7 +6,7 @@ import { Subject } from 'rxjs';
 @Component({
   selector: 'app-login-in',
   templateUrl: './login-in.component.html',
-  styleUrls: ['./login-in.component.css']
+  styleUrls: ['./login-in.component.scss']
 })
 export class LoginInComponent implements OnInit, OnDestroy {
   authForm!: FormGroup;

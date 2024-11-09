@@ -9,7 +9,7 @@ import {
 @Component({
   selector: 'app-sales-piechart',
   templateUrl: './sales-piechart.component.html',
-  styleUrls: ['./sales-piechart.component.css']
+  styleUrls: ['./sales-piechart.component.scss']
 })
 export class SalesPiechartComponent {
   public chartSeries: ApexNonAxisChartSeries;

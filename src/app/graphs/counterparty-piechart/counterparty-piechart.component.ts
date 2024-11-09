@@ -9,7 +9,7 @@ import {
 @Component({
   selector: 'app-counterparty-piechart',
   templateUrl: './counterparty-piechart.component.html',
-  styleUrls: ['./counterparty-piechart.component.css']
+  styleUrls: ['./counterparty-piechart.component.scss']
 })
 export class CounterpartyPiechartComponent {
   public chartSeries: ApexNonAxisChartSeries;
