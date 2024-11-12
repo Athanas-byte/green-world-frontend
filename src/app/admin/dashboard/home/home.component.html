@@ -3,59 +3,44 @@
 </div>
 
 <div class="dashboard-layout">
-    <div class="top-section">
-        <mat-card class="cash-flow-card">
-            <mat-card-content>
-                <app-cashflow-analyticalgraph></app-cashflow-analyticalgraph>
-            </mat-card-content>
-        </mat-card>
 
-        <mat-card class="products-card">
-            <mat-card-content>
-                <app-product-distribution-graph></app-product-distribution-graph>
-            </mat-card-content>
-        </mat-card>
+    <app-inventory-big-card></app-inventory-big-card>
+    <div class="top-section">
+        <div class="cash-flow-card">
+                <app-cashflow-analyticalgraph></app-cashflow-analyticalgraph>
+        </div>
+
+        <div class="products-card">
+                <app-deals-chart></app-deals-chart>
+        </div>
 
         <div class="right-alerts-card">
-            <mat-card class="notifications-card">
-                <mat-card-content>
+            
                     <app-product-performance-card></app-product-performance-card>
-                </mat-card-content>
-            </mat-card>
+                
         </div>
     </div>
 
     <div class="pie-charts">
-        <mat-card class="trade-counterparties">
-            <app-counterparty-piechart></app-counterparty-piechart>
-        </mat-card>
 
-        <mat-card class="sales-distribution">
-            <app-sales-piechart></app-sales-piechart>
-        </mat-card>
+        <div class="counterparties-chart">
+        
+            <app-counterparties-chart></app-counterparties-chart>
+        
+        </div>
 
-        <mat-card class="third-pie-chart">
-            Another pie cart
-        </mat-card>
+        <div class="catalogue-chart">
+        
+            <app-catalogue-chart></app-catalogue-chart> 
+        </div>
+
+      <div class="right-alerts-card2">
+            <app-replenish-alert-card></app-replenish-alert-card>
+      </div>
     </div>
 
     <div class="card-container">
-        <mat-card class="analytics-card">
-            <mat-card-content>
-                Articles
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card class="other-chart1">
-            <mat-card-content>
-                Other Chart 1
-            </mat-card-content>
-        </mat-card>
-
-        <mat-card class="other-chart2">
-            <mat-card-content>
-                Other Chart 2
-            </mat-card-content>
-        </mat-card>
+        <app-subsidiary-performance-table></app-subsidiary-performance-table>
     </div>
 </div>
+  

@@ -1,0 +1,38 @@
+<div class="inventory-big-card">
+
+  <div class="selection-criteria">
+    <label for="branch">Category:</label>
+    <select id="branch" [(ngModel)]="selectedBranch" (change)="updateProductOptions()">
+      <option *ngFor="let branch of branches" [value]="branch">{{ branch }}</option>
+    </select>
+  
+  
+    
+      <label for="product">Subcategory:</label>
+      <select id="product" [(ngModel)]="selectedProduct">
+        <option *ngFor="let product of products" [value]="product">{{ product }}</option>
+      </select>
+  
+  </div>
+  
+  
+<div class="gross-inventory-value">
+
+    <div class="single-card">
+     <app-total-inventory-card></app-total-inventory-card>
+ </div>
+
+ <div class="single-card">
+    <app-inventory-in-transit-card></app-inventory-in-transit-card> 
+    </div>
+
+    <div class="single-card">
+   <app-delivery-in-card></app-delivery-in-card>
+   </div>
+
+   <div class="single-card">
+   <app-delivery-out-card></app-delivery-out-card>
+   </div>
+
+ </div>
+</div>

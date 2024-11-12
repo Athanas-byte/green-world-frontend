@@ -1,5 +1,10 @@
-<div>
-  <h2>Cashflow Analytical Graph</h2>
+<div class="single-graph">
+  <div class="graph-body">
+    <div class="graph-title">
+      <div class="header">
+        <div class="info">
+      
+  <h6>Liquidity Analysis</h6>
   <div>
     <label for="week">Week:</label>
     <select id="week" [(ngModel)]="selectedWeek">
@@ -11,10 +16,14 @@
       <option *ngFor="let product of products" [value]="product">{{ product }}</option>
     </select>
   </div>
-  <apx-chart
-    [series]="chartSeries"
-    [chart]="chartOptions"
-    [xaxis]="xAxisOptions"
-    [colors]="chartColors">
-  </apx-chart>
+</div>
+</div>
+</div>
+  <div class="details-loading" *ngIf="isLoading">
+    <mat-spinner class="loading"></mat-spinner>
+  </div>
+  <div class="graph">
+    <canvas id="flagged-transac"></canvas>
+  </div>
+</div>
 </div>

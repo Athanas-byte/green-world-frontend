@@ -17,6 +17,7 @@ import { AuthlayoutComponent } from './layout/app_layout/authlayout/authlayout.c
 import { MainlayoutComponent } from './layout/app_layout/mainlayout/mainlayout.component';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { FormsModule } from '@angular/forms';
+import { CardsModule } from './cards/cards.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { FormsModule } from '@angular/forms';
     MatCardModule,
     MatExpansionModule,
     NgApexchartsModule,
-    FormsModule
+    FormsModule,
+    CardsModule
     
   ],
   providers: [],

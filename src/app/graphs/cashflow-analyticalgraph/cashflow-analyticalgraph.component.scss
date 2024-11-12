@@ -1,0 +1,145 @@
+.single-graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 11px;
+  }
+  .graph-body {
+    width: 90%;
+    height: 90%;
+  }
+  .graph-title {
+    height: 15%;
+  
+    h6 {
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      margin: 0;
+      color: #a32a29;
+    }
+    .cash-flow {
+      margin-top: 5px;
+      gap: 5px;
+      // width: 200%;
+      display: flex;
+      flex-wrap: nowrap;
+      // background-color: red;
+      .cashinoflow {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 3px;
+        font-size: 13px;
+        font-weight: 600;
+        text-wrap: nowrap;
+  
+        mat-icon {
+          border-radius: 50%;
+          background-color: #eaedf7;
+        }
+        span {
+          color: #8c9097;
+        }
+      }
+    }
+    p {
+      color: #8f8fb1;
+      font-size: 13px;
+      margin-top: 3px;
+      font-weight: 500;
+    }
+  }
+  .header {
+    display: flex;
+    gap: 10px;
+  }
+  .select-endof {
+    display: flex;
+    align-items: center;
+    width: 200px;
+    gap: 5px;
+    margin-bottom: 10px;
+    p {
+      white-space: nowrap;
+      margin: 0;
+      color: #a32a29;
+    }
+  }
+  .filters-select {
+    width: 50%;
+  }
+  
+  ::ng-deep.mat-mdc-select-value {
+    width: 100% !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  ::ng-deep .mat-mdc-select-placeholder {
+    color: #a32a29 !important;
+    font-size: 13px;
+  }
+  .mat-mdc-select {
+    border: 1px solid #a8afc7;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #a32a29 !important;
+    font-size: 13px;
+  }
+  .mat-mdc-option {
+    // color: #a8afc7 !important;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .filter {
+    width: 55%;
+    display: flex;
+    font-weight: 500;
+    gap: 5px;
+    align-items: center;
+    font-size: 13px;
+    color: #a32a29;
+    cursor: default;
+    .mat-icon {
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      color: #a32a29 !important;
+    }
+  }
+  .filter:hover {
+    p {
+      color: #6259ca !important;
+    }
+    .mat-icon {
+      color: #6259ca !important;
+    }
+  }
+  .graph {
+    height: 80%;
+    width: 100%;
+    overflow: auto;
+  }
+  .details-loading {
+    // padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    width: 100%;
+    height: 100%;
+  }
+  .color-equity {
+    color: #a32a29 !important;
+  }
+  .color-green {
+    color: #119c11 !important;
+  }
+  

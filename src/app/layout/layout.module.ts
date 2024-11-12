@@ -5,7 +5,6 @@ import { MainlayoutComponent } from './app_layout/mainlayout/mainlayout.componen
 import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { CardsModule } from '../cards/cards.module';
-import { UserCardComponent } from '../cards/user-card/user-card.component';
 
 
 @NgModule({
@@ -14,7 +13,7 @@ import { UserCardComponent } from '../cards/user-card/user-card.component';
     MainlayoutComponent,
     HeaderComponent,
     SidebarComponent,
-    UserCardComponent
+    
   ],
   imports: [
     CommonModule,

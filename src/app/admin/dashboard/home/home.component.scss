@@ -1,15 +1,13 @@
 .headers {
-    background-color: #92f59a;
+    background-color: #a32a29;
     margin-top: 20px;
     height: 40px;
 }
-
 .header-info {
     margin-left: 10px;
     display: flex;
     align-items: center;
 }
-
 .dashboard-layout {
     display: flex;
     flex-direction: column;
@@ -18,54 +16,59 @@
     margin-right: 20px;
     margin-bottom: 10px;
 }
-
 .top-section {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-
 .cash-flow-card {
     flex: 2;
     height: 450px;
     margin-right: 10px;
     width: 150px;
 }
-
 .products-card {
     flex: 1;
     height: 450px;
     margin-right: 10px;
 }
-
 .right-alerts-card {
+    margin-top: 10px;
     flex: 0 0 200px;
     height: 450px;
 }
-
-.notifications-card {
-    height: 100%;
-    width: 100%;
+.right-alerts-card2 {
+    flex: 0 0 200px;
+    height: 300px;
 }
-
 .pie-charts {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    align-items: flex-start;
+    margin-top: 10px; 
 }
-
-.trade-counterparties, .sales-distribution, .third-pie-chart {
+// .trade-counterparties, .sales-distribution, .third-pie-chart {
+//     flex: 1;
+//     height: 320px;
+//     margin-right: 10px;
+// }
+.counterparties-chart{
     flex: 1;
-    height: 320px;
+    height: 300px;
     margin-right: 10px;
+    width: 150px;
 }
-
+.catalogue-chart{
+    flex: 2;
+    height: 300px;
+    margin-right: 10px;
+    width: 250px;
+}
 .card-container {
-    display: flex;
-    justify-content: space-between;
+    
     margin-top: 10px;
+    margin-bottom: 20px;
 }
-
 .analytics-card, .other-chart1, .other-chart2 {
     flex: 1;
     height: 320px;
