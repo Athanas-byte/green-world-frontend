@@ -1,19 +1,26 @@
 <div class="container">
-    <div class="top-product">
+    <div class="content-container">
 
         <div class="title">
             <mat-icon>currency_exchange</mat-icon>
-            <p>On Demand Products</p>
+            <p>Top Selling Products</p>
           </div>
 
           <div class="on-demand-products">
 
         <!-- ======================================== -->
 
-            <div class="big-three" *ngFor="let product of topProducts">
-       <p> Poduct:</p> {{product.productName}} 
+        <div class="big-three" *ngFor="let product of topProducts">
+      <div class="product-wrapper"> 
+        <div class="title-description"><span> Poduct:</span></div>
+        <div class="title-name"> {{product.productName}} </div>
+    </div>
+    <div class="product-wrapper">
        <p> Total Sales:</p> {{product.soldItems}} Pieces 
-       <p> Total Turnover:</p> {{product.totalTurnover | number}} M
+       </div>
+       <div class="product-wrapper">
+       <p> Turnover:</p> {{product.totalTurnover | number}} M
+    </div>
     </div> 
 
     <!-- ======================================== -->

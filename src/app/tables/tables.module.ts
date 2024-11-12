@@ -9,11 +9,13 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { EmployeeRemunerationComponent } from './employee-remuneration/employee-remuneration.component';
+import { SubsidiaryPerformanceTableComponent } from './subsidiary-performance-table/subsidiary-performance-table.component';
 
 @NgModule({
   declarations: [
     EmployeeInformationComponent,
-    EmployeeRemunerationComponent
+    EmployeeRemunerationComponent,
+    SubsidiaryPerformanceTableComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { EmployeeRemunerationComponent } from './employee-remuneration/employee-
   ],
 
   exports: [
-    EmployeeInformationComponent
+    EmployeeInformationComponent,
+    SubsidiaryPerformanceTableComponent
   ]
 })
 export class TablesModule { }
