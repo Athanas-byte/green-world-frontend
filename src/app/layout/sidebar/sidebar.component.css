@@ -9,8 +9,52 @@ top: 60px;
 left: 0;
 height: calc(100vh-60px);
 width: 250px;
-background-color: #F0F0F0;
+background-color: rgb(66, 174, 221);
 z-index: 1000;
+}
+
+.right-buttons {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  cursor: pointer;
+  gap: 15px;
+  /* color: white;*/
+  color: #757575;
+  width: 100%;
+  /* margin-left: ;*/
+  height: 10%;
+  /* background: #a32a29;*/
+  background-color: rgb(66, 174, 221);
+  border: none;
+}
+
+.mat-expansion-panel {
+  /* background-color: #a32a29;*/
+  background-color: #0e0e23;
+}
+.mat-expansion-panel-header-title {
+  color: black;
+  /* background: #a32a29;*/
+  background-color: rgb(66, 174, 221);
+  border: none;
+  /* padding: 15px 0px;*/
+  display: flex;
+  /* align-items: center;*/;
+  gap: 15px;
+  text-wrap: nowrap;
+  span {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+
+::ng-deep .specific-class > .mat-expansion-indicator:after {
+  color: #757575;
+}
+
+.mat-expansion-panel-header-title:hover {
+  color: #a32a29;
 }
 
 .scrollable-content{
@@ -19,27 +63,25 @@ margin-left: 250px;
 height: calc(100vh-60px);
 overflow-y: auto;
 }
-.sidenav-items{
+/* .sidenav-items{
   text-align: center;
-  justify-content: space-around;
+  justify-content: space-around; */
   /* margin-left: 50px; */
-  font-weight: bolder;
+  /* font-weight: bolder;
   font-family: Arial, Helvetica, sans-serif;
   margin-top: 20px;
  
-}
+} */
 a{
   text-decoration: none;
   color: black;
   font-size: 20px;
   margin-bottom: 10px;
-  
-
 }
-.sidenav-items {
+/* .sidenav-items {
   padding: 0;
   margin: 0;
-}
+} */
 
 .mat-list-item {
   padding: 0;
@@ -56,19 +98,15 @@ a{
 }
 
 .mat-list-item a:hover {
-  background-color: #bedcc5; /* Slightly darker shade of the sidebar background color */
+  background-color: rgb(66, 174, 221); /* Slightly darker shade of the sidebar background color */
 }
 
 .mat-expansion-panel {
-  background-color: #bedcc5; /* Same as the sidebar background color */
+  background-color: rgb(66, 174, 221); /* Same as the sidebar background color */
   color: white;
 }
 
-.mat-expansion-panel-header {
-  background-color: #F0F0F0; /* Same as the sidebar background color */
-  color: white;
-  text-align: left;
-}
+
 
 .mat-panel-title {
   color: white;

@@ -1,22 +1,10 @@
-img{
-    height: 30px;
-    width: 100px;
-}
-.brand-image {
-    background-color: white; /* Set background color to white */
-    padding: 37px; /* Add padding to provide space around the image and text */
-    display: flex; /* Use flexbox to align items */
-    align-items: center; /* Center items vertically */
-    padding-right: 6px;
-}
-
 .fixed-toolbar {
     position: fixed;
     top: 0;
     margin-left: 250px;
     width: 100%; /* Ensure the toolbar spans the full width of the page */
     height: 60px; /* Ensure the height matches your design */
-    background-color: #F0F0F0;
+    background-color: rgb(66, 174, 221);
     display: flex;
     align-items: center;
     z-index: 1000; /* Make sure the toolbar stays above other elements */
