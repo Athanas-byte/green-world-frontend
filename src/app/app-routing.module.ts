@@ -47,7 +47,50 @@ const routes: Routes = [
     path:"cards",
     loadChildren: () =>
       import("./cards/cards.module"). then((m) => m.CardsModule)
-  }
+  },
+
+  {
+    path:'human-resource-module',
+    loadChildren: () =>
+      import("./human-resource-module/human-resource-module.module"). then((m) => m.HumanResourceModuleModule)
+  },
+
+  {
+    path:'supply-chain-module',
+    loadChildren: () =>
+      import("./supply-chain-module/supply-chain-module.module"). then((m) => m.SupplyChainModuleModule)
+  },
+
+  {
+    path:'inventory-module',
+    loadChildren: () =>
+      import("./inventory-module/inventory-module.module"). then((m) => m.InventoryModuleModule)
+  },
+
+  {
+    path:'logistics-module',
+    loadChildren: () =>
+      import("./logistics-module/logistics-module.module"). then((m) => m.LogisticsModuleModule)
+  },
+
+  {
+    path:'finance-module',
+    loadChildren: () =>
+      import("./finance-module/finance-module.module"). then((m) => m.FinanceModuleModule)
+  },
+
+  {
+    path:'crm-n-sales-module',
+    loadChildren: () =>
+      import("./crm-n-sales-module/crm-n-sales-module.module"). then((m) => m.CrmNSalesModuleModule)
+  },
+
+  {
+    path:'masterdata-module',
+    loadChildren: () =>
+      import("./masterdata-module/masterdata-module.module"). then((m) => m.MasterdataModuleModule)
+  },
+
 ]
 },
  

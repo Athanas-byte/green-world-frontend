@@ -1,7 +1,10 @@
 .headers {
-    background-color: #a32a29;
+    background-color: white;
     margin-top: 20px;
     height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 5px;
 }
 .header-info {
     margin-left: 10px;
@@ -20,17 +23,20 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 10px;
 }
 .cash-flow-card {
     flex: 2;
     height: 450px;
     margin-right: 10px;
     width: 150px;
+    background-color: white;
 }
 .products-card {
     flex: 1;
     height: 450px;
     margin-right: 10px;
+    background-color: white;
 }
 .right-alerts-card {
     margin-top: 10px;
@@ -40,6 +46,7 @@
 .right-alerts-card2 {
     flex: 0 0 200px;
     height: 300px;
+    background-color: white
 }
 .pie-charts {
     display: flex;
@@ -57,12 +64,14 @@
     height: 300px;
     margin-right: 10px;
     width: 150px;
+    background-color: white
 }
 .catalogue-chart{
     flex: 2;
     height: 300px;
     margin-right: 10px;
     width: 250px;
+    background-color: white
 }
 .card-container {
     

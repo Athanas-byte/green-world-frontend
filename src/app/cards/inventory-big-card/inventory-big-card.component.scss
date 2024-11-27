@@ -1,13 +1,16 @@
 .inventory-big-card {
     padding: 5px;
-    background-color: rgb(190, 195, 195);
+    border-radius: 5px;
+    background-color: rgb(180, 183, 183);
 }
 .gross-inventory-value {
     display: flex;
     justify-content: space-between;
  }
  .single-card {
+    //  background-color: rgb(66, 174, 221);
      background-color: white;
+     border-radius: 5px;
  }
 
  .selection-criteria {
