@@ -50,7 +50,7 @@ const routes: Routes = [
   },
 
   {
-    path:'human-resource-module',
+    path:'hr',
     loadChildren: () =>
       import("./human-resource-module/human-resource-module.module"). then((m) => m.HumanResourceModuleModule)
   },
@@ -86,9 +86,16 @@ const routes: Routes = [
   },
 
   {
-    path:'masterdata-module',
+    path:'masterdata',
     loadChildren: () =>
       import("./masterdata-module/masterdata-module.module"). then((m) => m.MasterdataModuleModule)
+  },
+
+  {
+    path:'subsidiary',
+    loadChildren: () =>
+      import("./subsidiary-maintenamce-module/subsidiary-maintenamce-module.module"). 
+    then((m) => m.SubsidiaryMaintenamceModuleModule)
   },
 
 ]
