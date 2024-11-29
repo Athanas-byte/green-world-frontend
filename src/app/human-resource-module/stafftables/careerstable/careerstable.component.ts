@@ -5,11 +5,11 @@ import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 
 @Component({
-  selector: 'app-staffrecords',
-  templateUrl: './staffrecords.component.html',
-  styleUrls: ['./staffrecords.component.scss']
+  selector: 'app-careerstable',
+  templateUrl: './careerstable.component.html',
+  styleUrls: ['./careerstable.component.scss']
 })
-export class StaffrecordsComponent {
+export class CareerstableComponent {
 
   totalData: number = 10;
   pageSize: number = 0;
@@ -34,13 +34,10 @@ export class StaffrecordsComponent {
   employees: any[] = [];
 
   displayedColumns: string[] = [
-    'staffId', 
-    'staffNo',
-    'firstName', 
-    'lastName', 
-    'academicBackground',
-    'role',
-    'experience',
+    'roleId', 
+    'roleName', 
+    'status', 
+    'department',
     'actions'
 
     ];

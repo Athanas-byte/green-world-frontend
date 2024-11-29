@@ -51,7 +51,7 @@ export interface RouteInfo {
       ]
     },
     {
-      path: "human-resource-module",
+      path: "hr",
       title: "Human Resource",
       moduleName: "HumanResourceModuleModule",
       icon: "badge", // Correct icon name
@@ -62,8 +62,8 @@ export interface RouteInfo {
       role: ["ADMIN"],
       submenu: [
         {
-          path: "./human-resource-module/staffrecords",
-          title: "Staff Rcords",
+          path: "./hr/staffrecords",
+          title: "Staff Records",
           icon: "arrow_right_alt",
           moduleName: "HumanResourceModuleModule",
           class: "",
@@ -74,8 +74,20 @@ export interface RouteInfo {
           submenu: []
         },
         {
-          path: "./human-resource-module/staffjourney",
-          title: "Staff Journey",
+          path: "./hr/staffcompensation",
+          title: "Salaries",
+          moduleName: "HumanResourceModuleModule",
+          icon: "arrow_right_alt", // Correct icon name
+          class: "",
+          groupTitle: false,
+          badge: "",
+          badgeClass: "",
+          role: ["ADMIN"],
+          submenu: []
+        },
+        {
+          path: "./hr/careers",
+          title: "Careers",
           moduleName: "HumanResourceModuleModule",
           icon: "arrow_right_alt", // Correct icon name
           class: "",
@@ -234,7 +246,7 @@ export interface RouteInfo {
       ]
     },
     {
-      path: "masterdata-module",
+      path: "masterdata/home",
       title: "Masterdata",
       moduleName: "MasterdataModuleModule",
       icon: "view_list",
@@ -243,63 +255,7 @@ export interface RouteInfo {
       badge: "",
       badgeClass: "",
       role: ["ADMIN"],
-      submenu: [
-
-        {
-          path: "./products/all-products",
-          title: "Subsidiaries",
-          moduleName: "products",
-          icon: "arrow_right_alt",
-          class: "",
-          badge: "",
-          badgeClass: "",
-          role: ["ADMIN"],
-          submenu: [],
-          groupTitle: false
-        },
-
-        {
-          path: "./masterdata-module/warehouses",
-          title: "Warehouses",
-          moduleName: "products",
-          icon: "arrow_right_alt",
-          class: "",
-          badge: "",
-          badgeClass: "",
-          role: ["ADMIN"],
-          submenu: [],
-          groupTitle: false
-        },
-
-        {
-          path: "./products/orders",
-          title: "Suppliers",
-          moduleName: "products",
-          icon: "arrow_right_alt",
-          class: "",
-          badge: "",
-          badgeClass: "",
-          role: ["ADMIN"],
-          submenu: [],
-          groupTitle: false
-        },
-
-        {
-          path: "./products/orders",
-          title: "Vehicles",
-          moduleName: "products",
-          icon: "arrow_right_alt",
-          class: "",
-          badge: "",
-          badgeClass: "",
-          role: ["ADMIN"],
-          submenu: [],
-          groupTitle: false
-        },
-
-
-
-      ]
+      submenu: []
     },
   ];
   

@@ -1,0 +1,34 @@
+mat-grid-tile {
+    background: white;
+  }
+
+  .tile-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center; // Center items inside tile
+    justify-content: center;
+    
+
+    mat-icon {
+      font-size: 25px; // Adjust icon size
+      margin-bottom: 8px; // Space between icon and text
+      color: rgb(66, 174, 221);
+    }
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  a:hover{
+    color: blue;
+  }
+
+.masterdata-home{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
