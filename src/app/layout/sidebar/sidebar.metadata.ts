@@ -102,9 +102,9 @@ export interface RouteInfo {
     },
 
     {
-      path: "supply-chain-module",
-      title: "Supply Chain",
-      moduleName: "SupplyChainModuleModule",
+      path: "supplychain",
+      title: "Logistics",
+      moduleName: "LogisticsModuleModule",
       icon: "local_shipping",
       class: "",
       groupTitle: false,
@@ -113,8 +113,8 @@ export interface RouteInfo {
       role: ["ADMIN"],
       submenu: [
         {
-          path: "./supply-chain-module/summary",
-          title: "Inventory",
+          path: "./logistics/orders",
+          title: "Orders",
           moduleName: "SupplyChainModuleModule",
           icon: "arrow_right_alt",
           class: "",
@@ -126,7 +126,60 @@ export interface RouteInfo {
         },
 
         {
-          path: "./supply-chain-module/expenses",
+          path: "./logistics/expenses",
+          title: "Warehouse",
+          moduleName: "SupplyChainModuleModule",
+          icon: "arrow_right_alt",
+          class: "",
+          badge: "",
+          badgeClass: "",
+          role: ["ADMIN"],
+          submenu: [],
+          groupTitle: false
+        },
+
+        {
+          path: "./logistics/income",
+          title: "Fleet",
+          moduleName: "SupplyChainModuleModule",
+          icon: "arrow_right_alt",
+          class: "",
+          badge: "",
+          badgeClass: "",
+          role: ["ADMIN"],
+          submenu: [],
+          groupTitle: false
+        },
+
+      ]
+    },
+
+    {
+      path: "inventory",
+      title: "Inventory",
+      moduleName: "InventoryModuleModule",
+      icon: "inventory",
+      class: "",
+      groupTitle: false,
+      badge: "",
+      badgeClass: "",
+      role: ["ADMIN"],
+      submenu: [
+        {
+          path: "./inventory/products",
+          title: "Products",
+          moduleName: "InventoryModuleModule",
+          icon: "arrow_right_alt",
+          class: "",
+          badge: "",
+          badgeClass: "",
+          role: ["ADMIN"],
+          submenu: [],
+          groupTitle: false
+        },
+
+        {
+          path: "./logistics/expenses",
           title: "Logistics",
           moduleName: "SupplyChainModuleModule",
           icon: "arrow_right_alt",
@@ -139,7 +192,7 @@ export interface RouteInfo {
         },
 
         {
-          path: "./supply-chain-module/income",
+          path: "./logistics/income",
           title: "Procurement",
           moduleName: "SupplyChainModuleModule",
           icon: "arrow_right_alt",

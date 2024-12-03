@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   isSidenavOpened: boolean = true
+  isProfileVisible: boolean = false
     ngOnInit(): void {
       
     }
@@ -14,6 +15,14 @@ export class HeaderComponent implements OnInit {
     toggleSidenav(){
       this.isSidenavOpened = false
     }
+
+    toggleProfile(){
+
+      this.isProfileVisible = !this.isProfileVisible
+
+    }
+
+    
 
     callFullscreen(){}
 }

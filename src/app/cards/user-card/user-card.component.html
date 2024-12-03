@@ -6,8 +6,8 @@
     </div>
   
     <!-- User Details -->
-    <div class="user-details">
-      <h3>Hello, {{ userData.firstName }}</h3>
+    <div class="user-details" *ngIf="isProfileVisible">
+      <p>Hello, {{ userData.firstName }}</p>
       <p>{{ userData.email }}</p>
     </div>
   

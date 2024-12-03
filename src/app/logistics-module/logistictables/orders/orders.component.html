@@ -1,0 +1,93 @@
+<div class="table-main-container">
+    <div class="headers">
+      <div class="headers-icon">
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <span class="material-symbols-outlined"><mat-icon>business</mat-icon></span>
+        <span>Orders</span>
+      </div>
+      
+    </div>
+  
+    <div class="search-container">
+      <p>Filter By</p>
+      <input type="text" placeholder="Subsidiary Name" [(ngModel)]="searchCriteria.country">
+      <input type="text" placeholder="Subsidiary Code" [(ngModel)]="searchCriteria.code">
+    </div>
+
+    <div class="button-row">
+        <button 
+        class="add-button"
+        (click)="placeOrder()">
+       <mat-icon>add</mat-icon>
+       Place Oreder
+       </button>
+
+
+    </div>
+  
+    <div class="table">
+      <div class="spinner-container" *ngIf="isLoading">
+        <mat-spinner class="spinner"></mat-spinner>
+      </div>
+      <table mat-table [dataSource]="dataSource" matSort #empTbSort="matSort">
+        <ng-container matColumnDef="customerId">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>customer_id</th>
+          <td mat-cell *matCellDef="let element">{{ element.customerId }}</td>
+        </ng-container>
+  
+        <ng-container matColumnDef="orderNo">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>order_no</th>
+          <td mat-cell *matCellDef="let element">{{ element.orderNo }}</td>
+        </ng-container>
+  
+        <ng-container matColumnDef="firstName">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>first_name</th>
+          <td mat-cell *matCellDef="let element">{{ element.firstName }}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="lastName">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>last_name</th>
+            <td mat-cell *matCellDef="let element">{{ element.lastName }}</td>
+          </ng-container>
+
+        <ng-container matColumnDef="location">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>location</th>
+            <td mat-cell *matCellDef="let element">{{ element.location }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="product">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>product</th>
+            <td mat-cell *matCellDef="let element">{{ element.product }}</td>
+          </ng-container>
+
+          <ng-container matColumnDef="paymentMode">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>payment_mode</th>
+            <td mat-cell *matCellDef="let element">{{ element.paymentMode }}</td>
+          </ng-container>
+
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef mat-sort-header>Actions</th>
+            <td mat-cell *matCellDef="let element">{{ element.actions }}</td>
+          </ng-container>
+  
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      </table>
+      <mat-paginator
+      #paginator
+      [length]="totalData"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="pageSizes"
+      aria-label="Select page"
+      textContent="hello"
+      [showFirstLastButtons]="true"
+      (page)="pageChangeEvent($event)"
+    >
+    </mat-paginator>
+    </div>
+  </div>
+  
