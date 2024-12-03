@@ -31,11 +31,6 @@ const routes: Routes = [
     loadChildren: () =>
       import("./accounts/accounts.module").then((m) => m.AccountsModule)
   },
-  {
-    path: "products",
-    loadChildren: () =>
-      import("./products/products.module").then((m) => m.ProductsModule)
-  },
 
   {
     path: "graphs",
@@ -56,19 +51,19 @@ const routes: Routes = [
   },
 
   {
-    path:'supply-chain-module',
+    path:'supplychain',
     loadChildren: () =>
       import("./supply-chain-module/supply-chain-module.module"). then((m) => m.SupplyChainModuleModule)
   },
 
   {
-    path:'inventory-module',
+    path:'inventory',
     loadChildren: () =>
       import("./inventory-module/inventory-module.module"). then((m) => m.InventoryModuleModule)
   },
 
   {
-    path:'logistics-module',
+    path:'logistics',
     loadChildren: () =>
       import("./logistics-module/logistics-module.module"). then((m) => m.LogisticsModuleModule)
   },

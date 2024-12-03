@@ -3,11 +3,11 @@
     <button mat-icon-button class="example-icon" aria-label="Toggle sidenav" (click)="toggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
-    
-   
    </div>
 
-   <!-- <div class="user-profile-card">
-      <app-user-card></app-user-card>
-   </div> -->
+   <span class="spacer"></span>
+
+   <div class="user-profile-card" click="toggleProfile()">
+      <app-user-card *ngIf="isProfileVisible"></app-user-card>
+   </div>
 </mat-toolbar>

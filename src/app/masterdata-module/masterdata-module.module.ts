@@ -5,6 +5,7 @@ import { MasterdataModuleRoutingModule } from './masterdata-module-routing.modul
 import { WarehouseMaintenanceModuleModule } from './warehouse-maintenance-module/warehouse-maintenance-module.module';
 import { MaterialsmoduleModule } from '../materialsmodule/materialsmodule.module';
 import { MaterdataHomeComponent } from './masterdata-home/materdata-home.component';
+import { MachineryMaintenanceModuleModule } from './machinery-maintenance-module/machinery-maintenance-module.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { MaterdataHomeComponent } from './masterdata-home/materdata-home.compone
     CommonModule,
     MasterdataModuleRoutingModule,
     WarehouseMaintenanceModuleModule,
-    MaterialsmoduleModule
+    MaterialsmoduleModule,
+    MachineryMaintenanceModuleModule
   ]
 })
 export class MasterdataModuleModule { }

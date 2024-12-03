@@ -27,9 +27,11 @@
           </mat-list>
         </mat-expansion-panel>
 
-        <div *ngIf="!route.submenu || route.submenu.length === 0" class="zero-route-panel">
+        <div *ngIf="!route.submenu || route.submenu.length === 0" 
+            class="zero-route-panel">
           <a [routerLink]="route.path">
-            <button click="setActive('{route.path}')" class="zero-items-button">
+            <button click="setActive('{route.path}')" 
+            class="zero-items-button">
               <mat-icon>{{route.icon}}</mat-icon>
               <span>{{ route.title}}</span>
             </button>

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UserCardComponent implements OnInit {
 
+  isProfileVisible: boolean = false
+
   userData = {
     firstName: "Athanas",
     lastName: "Sombe",
