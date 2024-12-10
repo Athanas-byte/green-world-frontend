@@ -139,8 +139,8 @@ export interface RouteInfo {
         },
 
         {
-          path: "./logistics/income",
-          title: "Fleet",
+          path: "./logistics/trips",
+          title: "Shipment",
           moduleName: "SupplyChainModuleModule",
           icon: "arrow_right_alt",
           class: "",

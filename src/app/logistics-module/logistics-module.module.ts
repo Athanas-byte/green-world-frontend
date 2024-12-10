@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { LogisticsModuleRoutingModule } from './logistics-module-routing.module';
 import { LogistictablesModule } from './logistictables/logistictables.module';
+import { LogisticformsModule } from './logisticforms/logisticforms.module';
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { LogistictablesModule } from './logistictables/logistictables.module';
   imports: [
     CommonModule,
     LogisticsModuleRoutingModule,
-    LogistictablesModule
+    LogistictablesModule,
+    LogisticformsModule
   ]
 })
 export class LogisticsModuleModule { }

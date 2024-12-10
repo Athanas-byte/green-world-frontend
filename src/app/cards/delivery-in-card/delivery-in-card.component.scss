@@ -1,7 +1,16 @@
+.gross-inventory{
+    width: 150px;
+
+}
 .gross-icon {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    mat-icon{
+        color: #26619c;
+        margin-right: 5px;
+
+    }
+    
 }
 
 .our-real-value{

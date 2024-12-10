@@ -1,8 +1,10 @@
 <div class="masterdata-home">
-    <div>
-        <span>Master Data Management</span>
+    <div class="masterdata-header">
+        <mat-icon>view_list</mat-icon><span>DATA/MASTERDATA MANAGEMENT</span>
     </div>
-<mat-grid-list cols="2" rowHeight="2:1" class="custom-grid">
+
+<div class="grid-list-content">
+<mat-grid-list cols="3" rowHeight="2:1" class="custom-grid">
     <mat-grid-tile>
         <div class="tile-title">
         <mat-icon>account_balance</mat-icon>
@@ -51,7 +53,52 @@
         PRODUCTS
     </a>
     </div>
+</mat-grid-tile>
+    <mat-grid-tile>
+       <div class="tile-title">
+        <mat-icon>group</mat-icon>
+       
+        <mat-expansion-panel>
+            
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                COUNTERPARTY MANAGEMENT
+            </mat-panel-title>
+            </mat-expansion-panel-header>
+            <mat-list>
+                <mat-list-item>
+                <a [routerLink]="['/inventory/products']"
+                   class="expansion-list-item">
+                   <mat-icon>handshake</mat-icon>PARTNERS</a>
+            </mat-list-item>
+
+            <mat-list-item>
+                <a [routerLink]="['/inventory/products']"
+                class="expansion-list-item">
+                <mat-icon>local_shipping</mat-icon>SUPPLIERS</a>
+            </mat-list-item>
+            <mat-list-item>
+                <a [routerLink]="['/inventory/products']"
+                class="expansion-list-item">
+                <mat-icon>business_fare</mat-icon>
+                CORPORATES</a>
+            </mat-list-item>
+
+            </mat-list>
+        </mat-expansion-panel>
+    </div>
+    
     </mat-grid-tile>
+    <mat-grid-tile>
+        <div class="tile-title">
+        <mat-icon>account_balance</mat-icon>
+        <a [routerLink]="">
+        GL CONFIGURATION
+    </a>
+    </div>
+    </mat-grid-tile>
+    
   </mat-grid-list>
+</div>
 </div>
   

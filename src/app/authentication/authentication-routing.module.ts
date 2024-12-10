@@ -4,6 +4,7 @@ import { LoginInComponent } from './login-in/login-in.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { SignupComponent } from './signup/signup.component';
 import { RegisterUserComponent } from './register-user/register-user.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,11 @@ const routes: Routes = [
   {
     path: "register-user",
     component: RegisterUserComponent
+  },
+
+  {
+    path: "error404",
+    component: PageNotFoundComponent
   }
 ];
 

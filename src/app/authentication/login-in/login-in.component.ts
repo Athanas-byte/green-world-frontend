@@ -12,6 +12,7 @@ export class LoginInComponent implements OnInit, OnDestroy {
   authForm!: FormGroup;
   hide = true;
   error: string | null = null;
+  otpBox: boolean = false;
   loading: boolean = false;
   private destroy$ = new Subject<boolean>();
 
@@ -19,7 +20,7 @@ export class LoginInComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.authForm = this.fb.group({
-      username: ["", Validators.required],
+      email: ["",[Validators.email, Validators.required]],
       password: ["", Validators.required],
     });
   }
