@@ -11,6 +11,8 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTabsModule} from '@angular/material/tabs';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -28,7 +30,9 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatSortModule,
     MatTableModule,
     MatGridListModule,
-    MatExpansionModule 
+    MatExpansionModule,
+    MatTabsModule,
+    MatListModule
     
   ]
 })

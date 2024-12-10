@@ -104,10 +104,10 @@ const routes: Routes = [
     
   },
 
-  // { 
-  //   path: "**", 
-  //   redirectTo: "authentication/login-in" 
-  // }
+  { 
+    path: "**", 
+    redirectTo: "authentication/error404" 
+  }
   
 ];
 

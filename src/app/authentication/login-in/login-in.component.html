@@ -7,11 +7,11 @@
             <form [formGroup]="authForm" (ngSubmit)="onSubmit()">
               <div class="col-12 mb-2">
                 <mat-form-field class="example-full-width" appearance="outline">
-                  <p>Username</p>
-                  <input matInput formControlName="username" />
+                  <p>Email</p>
+                  <input matInput formControlName="email" />
                   <mat-icon matPrefix>account_box</mat-icon>
-                  <mat-error *ngIf="authForm.get('username')?.hasError('required')">
-                    Username is required
+                  <mat-error *ngIf="authForm.get('email')?.hasError('required')">
+                    Email is required
                   </mat-error>
                 </mat-form-field>
               </div>
@@ -34,6 +34,10 @@
                 <button class="btn" mat-raised-button [disabled]="loading || !authForm.valid" type="submit">
                   Login
                 </button>
+              </div>
+
+              <div class="otp-input-container">
+                
               </div>
               <div class="row justify-content-center">
                 <div class="col-6 text-center">No account yet?<a routerLink="/authentication/signup">Signup here</a></div>

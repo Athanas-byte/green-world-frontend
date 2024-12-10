@@ -9,7 +9,8 @@ top: 60px;
 left: 0;
 height: calc(100vh - 60px) !important;
 width: 250px;
-background-color: rgb(66, 174, 221);
+/* background-color: rgb(66, 174, 221); */
+background-color: #26619c;
 z-index: 1000;
 }
 
@@ -25,7 +26,8 @@ z-index: 1000;
   /* margin-left: ;*/
   height: 10%;
   /* background: #a32a29;*/
-  background-color: rgb(66, 174, 221);
+  /* background-color: rgb(66, 174, 221); */
+  background-color: #26619c;
   border: none;
 }
 
@@ -36,7 +38,8 @@ z-index: 1000;
 .mat-expansion-panel-header-title {
   color: black;
   /* background: #a32a29;*/
-  background-color: rgb(66, 174, 221);
+  /* background-color: rgb(66, 174, 221); */
+  background-color: #26619c;
   border: none;
   /* padding: 15px 0px;*/
   display: flex;
@@ -52,7 +55,8 @@ z-index: 1000;
 .zero-route-panel{
   color: black;
   /* background: #a32a29;*/
-  background-color: rgb(66, 174, 221);
+  /* background-color: rgb(66, 174, 221); */
+  background-color: #26619c;
   border: none;
   /* padding: 15px 0px;*/
   display: flex;
@@ -97,7 +101,8 @@ overflow-y: auto;
 .zero-items-button{
   color: black;
   /* background: #a32a29;*/
-  background-color: rgb(66, 174, 221);
+  /* background-color: rgb(66, 174, 221); */
+  background-color: #26619c;
   border: none;
   /* padding: 15px 0px;*/
   display: flex;
@@ -140,7 +145,8 @@ a{
 }
 
 .mat-expansion-panel {
-  background-color: rgb(66, 174, 221); /* Same as the sidebar background color */
+  /* background-color: rgb(66, 174, 221);  */
+  background-color: #26619c;
   color: white;
 }
 

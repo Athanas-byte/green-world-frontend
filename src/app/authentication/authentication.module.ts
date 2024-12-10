@@ -11,13 +11,15 @@ import {MatSelectModule} from '@angular/material/select';
 import { SignupComponent } from './signup/signup.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { RegisterUserComponent } from './register-user/register-user.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     LoginInComponent,
     SignupComponent,
     ForgotPasswordComponent,
-    RegisterUserComponent
+    RegisterUserComponent,
+    PageNotFoundComponent
   ],
   imports: [
     CommonModule,
