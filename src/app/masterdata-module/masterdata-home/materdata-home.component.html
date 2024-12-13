@@ -58,33 +58,33 @@
        <div class="tile-title">
         <mat-icon>group</mat-icon>
        
-        <mat-expansion-panel>
+        <mat-expansion-panel class="mat-elevation-z0">
             
-            <mat-expansion-panel-header>
+            <mat-expansion-panel-header class="expansion">
                 <mat-panel-title>
                 COUNTERPARTY MANAGEMENT
             </mat-panel-title>
             </mat-expansion-panel-header>
-            <mat-list>
-                <mat-list-item>
+            <li>
+                
                 <a [routerLink]="['/inventory/products']"
                    class="expansion-list-item">
                    <mat-icon>handshake</mat-icon>PARTNERS</a>
-            </mat-list-item>
+                </li>
 
-            <mat-list-item>
+              <li>
                 <a [routerLink]="['/inventory/products']"
                 class="expansion-list-item">
                 <mat-icon>local_shipping</mat-icon>SUPPLIERS</a>
-            </mat-list-item>
-            <mat-list-item>
+            </li>
+            <li>
                 <a [routerLink]="['/inventory/products']"
                 class="expansion-list-item">
                 <mat-icon>business_fare</mat-icon>
                 CORPORATES</a>
-            </mat-list-item>
+            </li>
 
-            </mat-list>
+        
         </mat-expansion-panel>
     </div>
     
