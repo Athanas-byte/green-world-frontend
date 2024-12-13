@@ -100,14 +100,10 @@ const routes: Routes = [
     path: "authentication", 
     component: AuthlayoutComponent,
     loadChildren: () =>
-      import("./authentication/authentication.module").then((m) =>m.AuthenticationModule)
-    
+      import("./authentication/authentication.module").then((m) =>m.AuthenticationModule),  
   },
 
-  { 
-    path: "**", 
-    redirectTo: "authentication/error404" 
-  }
+  { path: "**", redirectTo: "authentication/error404" }
   
 ];
 

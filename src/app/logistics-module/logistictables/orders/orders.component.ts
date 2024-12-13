@@ -58,7 +58,7 @@ export class OrdersComponent {
   isLoading: boolean = false
 
   placeOrder(){
-    this.router.navigate([''])
+    this.router.navigate(['/logistics/placeorders'])
   }
 
   isRemunerationVisible() {

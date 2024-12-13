@@ -63,5 +63,14 @@ mat-grid-tile {
     color: blue;
   }
 
+  .mat-expansion-panel {
+    padding: 0 !important;
+  }
+  
+  .mat-expansion-panel-header.expansion {
+    padding: 0 !important;
+    margin-right: 10px;
+  }
+
 
   
