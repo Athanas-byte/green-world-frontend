@@ -179,9 +179,9 @@ export interface RouteInfo {
         },
 
         {
-          path: "./logistics/expenses",
-          title: "Logistics",
-          moduleName: "SupplyChainModuleModule",
+          path: "./inventory/WIP",
+          title: "WIP",
+          moduleName: "InventoryModuleModule",
           icon: "arrow_right_alt",
           class: "",
           badge: "",
@@ -193,7 +193,7 @@ export interface RouteInfo {
 
         {
           path: "./logistics/income",
-          title: "Procurement",
+          title: "",
           moduleName: "SupplyChainModuleModule",
           icon: "arrow_right_alt",
           class: "",

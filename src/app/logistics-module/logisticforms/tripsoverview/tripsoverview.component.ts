@@ -35,14 +35,19 @@ export class TripsoverviewComponent {
     }
   ]
 
-  @ViewChild(MatSort) empTbSort = new MatSort
-  @ViewChild(MatPaginator) Paginator!: MatPaginator
+  @ViewChild('matSort1') matSort1 = new MatSort
+  @ViewChild('paginator1') paginator1!: MatPaginator
   employees: any;
+
+  @ViewChild('matSort2') matSort2 = new MatSort
+  @ViewChild('paginator2') paginator2!: MatPaginator
+  //employees: any;
   
 
   pageChangeEvent(event: any){}
 
-  displayedColumns: string[]=[
+  dataSource1 = new MatTableDataSource()
+  displayedColumns1: string[]=[
     'orderId',
     'orderNo',
     'vehicleReg',
@@ -52,7 +57,13 @@ export class TripsoverviewComponent {
     'actions'
   ]
 
-  dataSource = new MatTableDataSource()
+  dataSource2 = new MatTableDataSource()
+  displayedColumns2: string[] = [
+    'orderId',
+    'orderNo',
+    'vehicleReg',
+    'actions'
+  ]
 
   get filteredEmployees() {
     return this.employees.filter((employee: { status: string | any[]; role: string | any[]; }) =>

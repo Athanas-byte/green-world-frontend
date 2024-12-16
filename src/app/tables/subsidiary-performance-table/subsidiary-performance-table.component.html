@@ -10,12 +10,46 @@
       </div>
       
     </div>
-  
-    <div class="search-container">
-      <p>Filter By</p>
-      <input type="text" placeholder="Subsidiary Name" [(ngModel)]="searchCriteria.country">
-      <input type="text" placeholder="Subsidiary Code" [(ngModel)]="searchCriteria.code">
+
+  <div class="table-container">
+    <div class="table-head-nav">
+      <div class="formfield-header">
+        <mat-icon>filter_alt</mat-icon>
+        <label class="form-label0">Filter Table By GL</label>
+      </div>
+
+      <div class="formfield-flex">
+        <div class="formfield-label">
+          <label class="form-label">Order Number</label>
+          <div class="forminput-label">
+            <div class="duration-days1">
+              <div>
+              <input 
+                 type="text" 
+                 placeholder="Subsidiary Name" 
+                 [(ngModel)]="searchCriteria.country">
+              </div>   
+        </div>
     </div>
+  </div>
+
+    <div class="formfield-label">
+      <label class="form-label">Product</label>
+      <div class="forminput-label">
+        <div class="duration-days1">
+          <div>
+         <input type="text" 
+                placeholder="Subsidiary Code" 
+                [(ngModel)]="searchCriteria.code">
+    </div>
+    </div>
+  </div>
+</div>
+
+      <mat-icon>refresh</mat-icon>
+    
+</div>
+</div>
   
     <div class="table">
       <div class="spinner-container" *ngIf="isLoading">
@@ -63,5 +97,6 @@
     >
     </mat-paginator>
     </div>
+  </div>
   </div>
   

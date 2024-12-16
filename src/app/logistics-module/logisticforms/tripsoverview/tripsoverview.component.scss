@@ -1,63 +1,7 @@
 .trips-main-container{
-  margin-top: 10px;
-  width: 100%;
-  margin-left: 10px;
   background-color: white;
+  margin-top: 10px;
 }
-.filter-row{
-  border-radius: 5px;
-  background-color: rgb(180, 183, 183);;
-  width: 95%;
-  display: flex;
-  flex-direction: row;
-  margin-right: 30px;
-  justify-content: space-between;
-  height: 60px;
-  span{
-    color: black;
-  }
-}
-
-mat-tab-group{
-  margin-top: 15px;
-}
-
-mat-tab{
-  background-color: green;
-}
-
-// .filter{
-//     display: flex;
-//     align-items: center;
-
-//     span{
-//         font-weight: bold;
-//         margin-right: 5px;
-//     }
-//     mat-icon{
-//         color: white;
-//     }
-// }
-
-// .container {
-//     padding: 20px;
-//   }
-  
-//   .trip-card {
-//     margin-bottom: 15px;
-//   }
-  
-//   .trip-header {
-//     display: flex;
-//     justify-content: space-between;
-//     margin-bottom: 10px;
-//   }
-  
-//   .trip-timeline {
-//     display: flex;
-//     justify-content: space-between;
-//   }
-
 .table-main-container {
   display: flex;
   justify-content: center;
@@ -66,6 +10,39 @@ mat-tab{
   width: 100%;
   margin-left: 15px;
   margin-right: 5px;
+}
+
+.table-container {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.table {
+  position: relative;
+  width: 95%;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: auto;
+}
+th {
+  color: #6259ca;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2;
+}
+td {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+  text-transform: capitalize;
 }
 
 .headers {
@@ -88,7 +65,7 @@ mat-tab{
   align-items: center;
   margin-left: 10px;
   gap: 10px;
-  color: #a32a29;
+  color: #26619c;
 }
 
 .buttons-container {
@@ -97,8 +74,8 @@ mat-tab{
   margin-right: 20px;
 }
 
-.action-button {
-  background-color: #a32a29;
+.add-button {
+  background-color: #26619c;
   color: white;
   border: none;
   border-radius: 4px;
@@ -114,10 +91,15 @@ mat-tab{
   font-size: 20px;
 }
 
-.search-container {
+.table-head-nav {
+  margin-top: 15px;
+  width: 95%;
+  background-color: #eaedf7;
   display: flex;
-  gap: 10px;
-  margin: 15px 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 2%;
+  border-radius: 10px;
 }
 
 .search-container input {
@@ -129,7 +111,7 @@ mat-tab{
 }
 
 .table {
-  width: 100%;
+  width: 95%;
   margin: 20px;
 }
 
@@ -139,5 +121,70 @@ mat-tab{
   align-items: center;
   margin-top: 20px;
 }
+.formfield-flex {
+  width: 97%;
+  display: flex;
+  align-items: center;
+  // flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  margin-bottom: 5px;
+  margin-left: 1%;
+}
 
-  
+.formfield-item {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  // margin-right: 60px;
+}
+
+.form-label {
+  // color: #a32a29;
+  color: #6259ca;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.duration-days1 {
+  display: flex;
+  gap: 10px;
+  input {
+    outline: 0;
+    display: flex;
+
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.175rem 0.18rem 0.175rem 0rem;
+    color: rgba(0, 0, 0, 0.38);
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #6259ca;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    height: 38px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .mat-mdc-select {
+    outline: 0;
+    display: flex;
+
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.175rem 0.18rem 0.175rem 0rem;
+    color: rgba(0, 0, 0, 0.38);
+    font-weight: 600;
+    font-size: 14px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #6259ca;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    height: 38px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+}
+::ng-deep .mat-mdc-select-value-text {
+  padding-left: 5px;
+}
